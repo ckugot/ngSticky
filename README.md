@@ -71,6 +71,10 @@ And if you want to confine an element to its parent, and let it 'bottom out', ju
 ```html
     <div sticky offset="100" confine="true"> Will unstick and stick to bottom of parent element</div>
 ```
+If you want to add a custom z-index value to the sticky element, add the `z-index` attribute:
+```html
+    <div sticky z-index="1000"> Will unstick and stick to bottom of parent element</div>
+```
 > NOTE: The `confine` attribute will automagically assign its parent a `position: relative` style in order to help with absolute positioning relative to the parent.
 
 If you'd like to use an element's overflow-y instead of the window scrollbar.  You can use the "sticky-scroll" element to denote an element styled to handle this.
